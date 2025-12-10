@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background-color: #161513; */
+background: linear-gradient(120deg, #050010, #000000);
+  color: #fff;
+
+}
+
+section {
+  padding-top: 120px;       /* Only sections shift down */
+  scroll-margin-top: 120px; /* Fix anchor scroll */
+}

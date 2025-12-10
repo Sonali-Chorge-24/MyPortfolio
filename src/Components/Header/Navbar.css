@@ -1,0 +1,127 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background: linear-gradient(
+  180deg,
+  #000000 0%,
+  #140d1f 100%
+);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+.navbar img {
+    height: 70px;
+    width: 200px;
+}
+.nav-connect a{
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-image: linear-gradient(109.8deg, rgba(62,5,116,1) -5.2%,rgba(41,14,151,1) -5.2%, rgba(216,68,148,1) 103.3%);
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+   
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.nav-menu li {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-menu li a {
+  margin: 0;
+  padding: 8px 10px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+.nav-menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-image: linear-gradient(109.8deg,rgba(62,5,116,1) -5.2%,rgba(41,14,151,1) -5.2%,rgba(216,68,148,1) 103.3% );
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav-menu li:hover::after {
+  transform: scaleX(1);
+}
+.nav-menu li.active::after {
+  transform: scaleX(1);
+}
+.nav-mob-open,
+.nav-mob-close {
+  display: none;
+  cursor: pointer;
+  width: 28px; 
+}
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 10px 10px; 
+  }
+  .navbar .nav-connect {
+    display: none;
+}
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -200px; 
+    width: 100px; 
+    height: 100vh;
+    flex-direction: column;
+ background: linear-gradient(
+  90deg,
+  #1a1326 0%,
+  #1e1d1d 100%
+);
+ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    padding-top: 10px;
+    padding-left: 25px;
+    gap: 28px;
+    transition: right 0.4s ease-in-out;
+    z-index: 1100;
+  }
+  .nav-menu li a {
+    font-size: 15px;
+    text-align: center;
+  }
+  .navbar  .nav-logo{
+    width: 100px;
+  }
+  .navbar img{
+      height: 30px;
+      width: 30px;
+  }
+  .nav-mob-open {
+   display: block;
+   padding-left: 40px; 
+  }
+  .nav-mob-close {
+    display: block;
+  }
+}

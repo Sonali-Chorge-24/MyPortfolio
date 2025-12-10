@@ -1,0 +1,154 @@
+.hero
+{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    gap: 35px;
+}
+.hero img{
+    margin-top: 80px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.hero h1{
+    text-align: center;
+    width: 50%;
+    font-size: 40px;
+    font-weight: 600;
+}
+.hero h1 span
+{
+    background-image: linear-gradient( 109.8deg,  rgba(62,5,116,1) -5.2%, rgba(41,14,151,1) -5.2%, rgba(216,68,148,1) 103.3% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p{
+    width: 40%;
+    text-align: center;
+    font-size: 17px;
+    line-height: 30px;
+}
+.hero-action
+{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hero-connect
+{
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-image: linear-gradient( 109.8deg,  rgba(62,5,116,1) -5.2%, rgba(41,14,151,1) -5.2%, rgba(216,68,148,1) 103.3% );
+    cursor: pointer;
+}
+.hero-resume
+{
+    padding: 7px 30px;
+    border-radius: 50px;
+    border: 2px solid #ede2ee;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.hero-connect:hover{
+    border: 2px solid white;
+}
+.hero-resume:hover
+{
+    background-image: linear-gradient( 109.8deg,  rgba(62,5,116,1) -5.2%, rgba(41,14,151,1) -5.2%, rgba(216,68,148,1) 103.3% );
+    border-color: #b415ff;
+}
+.hero {
+  margin-top: 0;
+  padding-top: 70px; 
+}
+@media (max-width: 1024px) {
+  .hero h1 {
+    width: 70%;
+    font-size: 32px;
+  }
+  .hero p {
+    width: 60%;
+    font-size: 16px;
+  }
+  .hero-action {
+    font-size: 20px;
+    gap: 20px;
+  }
+  .hero img {
+    height: 180px;
+    width: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    gap: 25px;
+    padding-top: 60px;
+  }
+  .hero img {
+    height: 160px;
+    width: 160px;
+  }
+  .hero h1 {
+    width: 90%;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .hero p {
+    width: 85%;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .hero-action {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+  }
+  .hero-resume,
+  .nav-connect {
+    padding: 10px 25px;
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 40px;
+    gap: 20px;
+  }
+  .hero img {
+    height: 130px;
+    width: 130px;
+  }
+  .hero h1 {
+    width: 90%;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .hero p {
+    width: 90%;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .hero-action {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .nav-connect,
+  .hero-resume {
+    width: auto;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+  }
+}
