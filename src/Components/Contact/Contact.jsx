@@ -59,7 +59,7 @@ If you think my skills match your requirements, let’s talk!</p>
                   </div>
                   <div className="contact-detail">
                     <img src={Github} alt="" style={{height:"25px",width:"25px"}} />
-                    <a href="https://github.com/your-github-username"
+                    <a href="https://github.com/Sonali-Chorge-24"
                       target="_blank" rel="noopener noreferrer">
                       GitHub Profile
                     </a>

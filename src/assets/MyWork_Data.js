@@ -1,6 +1,6 @@
-import project1_video from "./project1_video.mp4";
+// import project1_video from "./project1_video.mp4";
 import project2_img from "./project2_img.png";
-import project3_video from "./project3_video.mp4";
+// import project3_video from "./project3_video.mp4";
 import project4_video from "./project4_video.mp4";
 
 
@@ -8,7 +8,7 @@ const MyWork_Data = [
   {
     w_no: 1,
     w_name: "Shop Smart – E-Commerce Website",
-    w_video: project1_video,
+    w_video: "https://www.youtube.com/embed/_EXjsfZym2M",
     w_desc: "A fully functional online shopping platform featuring secure authentication, product listing with filtering, shopping cart functionality, and a dedicated admin panel for product and order management. The application is built using ASP.NET MVC / .NET Core, SQL Server for database management, and a responsive UI crafted with HTML5, CSS3, Bootstrap, jQuery, and AJAX."
   },
   {
@@ -20,7 +20,7 @@ const MyWork_Data = [
   {
     w_no: 3,
     w_name: "Salon And Spa Booking System",
-    w_video: project3_video,
+    w_video: "https://www.youtube.com/embed/_EXjsfZym2M",
     w_desc: "A Salon & Spa Booking System built using ASP.NET for the backend and HTML, CSS, and Bootstrap for the frontend. This was my college-level project focused on implementing service booking features and basic appointment management."
   },
   {
